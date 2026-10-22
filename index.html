@@ -3019,6 +3019,109 @@ ${itemsStr}`;
                 if (typeof window.navigateTo === 'function') window.navigateTo('home');
             } catch (error) { showAuthError(error); }
         };
-    </script>
+    </script
+     
+<!-- INAAYA HOMEPAGE SETTINGS -->
+<section id="inaaya-home-editor">
+  <h2>Homepage Editor</h2>
+
+  <label for="heroDescription">Hero Description</label>
+  <textarea id="heroDescription" rows="4"></textarea>
+
+  <h3>Explore Catalog Button</h3>
+  <label for="catalogText">Button Text</label>
+  <input id="catalogText" type="text">
+
+  <label for="catalogIcon">Button Icon</label>
+  <select id="catalogIcon">
+    <option value="&#xf023;">Lock</option>
+    <option value="&#xf290;">Shopping Bag</option>
+    <option value="&#xf06e;">Eye</option>
+    <option value="&#xf06b;">Gift</option>
+    <option value="">No Icon</option>
+  </select>
+
+  <label for="catalogLink">Button Link</label>
+  <input id="catalogLink" type="text">
+
+  <label>
+    <input id="catalogVisible" type="checkbox" checked>
+    Show Explore Catalog Button
+  </label>
+
+  <hr>
+
+  <h3>View Sarees Button</h3>
+  <label for="sareesText">Button Text</label>
+  <input id="sareesText" type="text">
+
+  <label for="sareesIcon">Button Icon</label>
+  <select id="sareesIcon">
+    <option value="">No Icon</option>
+    <option value="&#xf290;">Shopping Bag</option>
+    <option value="&#xf06b;">Gift</option>
+  </select>
+
+  <label for="sareesLink">Button Link</label>
+  <input id="sareesLink" type="text">
+
+  <label>
+    <input id="sareesVisible" type="checkbox" checked>
+    Show View Sarees Button
+  </label>
+
+  <hr>
+
+  <h3>Collection Card</h3>
+  <label for="collectionTitle">Title</label>
+  <input id="collectionTitle" type="text">
+
+  <label for="collectionSubtitle">Subtitle</label>
+  <input id="collectionSubtitle" type="text">
+
+  <label for="collectionLogo">Logo Image URL</label>
+  <input id="collectionLogo" type="url">
+
+  <button type="button" id="saveInaayaSettings">
+    Save Settings
+  </button>
+
+  <p id="inaayaSaveStatus" role="status"></p>
+</section>
+
+<style>
+#inaaya-home-editor {
+  max-width: 700px;
+  padding: 24px;
+  margin: 20px auto;
+  background: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+#inaaya-home-editor label {
+  display: block;
+  margin: 12px 0 6px;
+}
+#inaaya-home-editor input:not([type="checkbox"]),
+#inaaya-home-editor textarea,
+#inaaya-home-editor select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#inaaya-home-editor button {
+  margin-top: 18px;
+  padding: 12px 20px;
+  background: #191919;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>   
 </body>
 </html>
